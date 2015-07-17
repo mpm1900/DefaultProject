@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="client" lang="US-en">
+<head>
+  <title>{{ core.page.title }}</title>
+
+  <!-- STYLESHEETS -->
+  <!-- LIBRARY STYLES -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- MASTER STYLES -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+  <pre>INDEX.HTML -> { running: {{ core.running }} }</pre>
+  <div ng-view></div>
+
+  <!-- CORE SCRIPTS -->
+  <script src="./node_modules/angular/angular.min.js"></script>
+  <script src="./node_modules/angular-route/angular-route.min.js"></script>
+  <script src="./node_modules/angular-resource/angular-resource.min.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- APP SCRIPTS -->
+  <script src="app.js"></script>
+    <script src="app.route.js"></script>
+
+
+  <!-- DEV SCRIPTS -->
+  <script src="index.js"></script>
+
+      <!-- APP COMPONENTS -->
+      <script src="./components/home/controllers/home.js"></script>
+      <script src="./components/auth/controllers/login.js"></script>
+</body>
+</html>
